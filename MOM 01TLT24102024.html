@@ -34,6 +34,14 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+        }
+        h2, h3 {
+            font-weight: 600;
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -48,13 +56,57 @@
     
     <div class="content text-left mt-4">
         <h2>Minutes of Meeting</h2>
-        <p><strong>Agenda:</strong></p>
+        <p><strong>Tanggal:</strong> 24 Oktober 2024</p>
+        
+        <h3>Agenda</h3>
         <ul>
-            <li>Pembahasan kebutuhan sistem untuk pengelolaan tenaga outsourcing di Telkom.</li>
-            <li>Identifikasi fitur dan modul yang dibutuhkan dalam sistem.</li>
-            <li>Timeline dan langkah selanjutnya untuk implementasi sistem.</li>
+            <li>Diskusi kebutuhan dan tantangan sistem pengelolaan tenaga outsourcing di Telkom.</li>
+            <li>Rincian fitur dan modul yang diusulkan sesuai spesifikasi kebutuhan.</li>
+            <li>Pembahasan timeline dan langkah selanjutnya untuk implementasi sistem berbasis Odoo.</li>
         </ul>
-        <!-- Tambahkan konten lebih lanjut di sini sesuai kebutuhan -->
+
+        <h3>Pembahasan Utama</h3>
+        
+        <h4>1. Kebutuhan Sistem untuk Outsourcing</h4>
+        <p>Telkom akan mengelola tenaga outsourcing (housekeeping, security, dll.) secara langsung tanpa vendor mulai tahun depan. Sistem ini akan membantu memudahkan manajemen tenaga kerja, memantau kinerja, dan menyediakan laporan aktivitas serta absensi.</p>
+        
+        <h4>2. Fitur yang Diharapkan</h4>
+        <ul>
+            <li><strong>Dashboard Multi-User:</strong> Sistem harus memiliki tiga tampilan pengguna (POV): Building Management, Pekerja, dan Klien.</li>
+            <li><strong>Pelaporan Terstruktur:</strong> Sistem diharapkan dapat menghasilkan laporan harian, mingguan, dan bulanan secara otomatis.</li>
+            <li><strong>Absensi Berbasis Geotagging:</strong> Sistem dilengkapi fitur geotagging untuk memastikan lokasi pekerja saat absensi.</li>
+            <li><strong>Dokumentasi Aktivitas:</strong> Setiap aktivitas harian seperti pembersihan dan pemeriksaan keamanan terdokumentasi dalam sistem.</li>
+            <li><strong>Checklist Otomatis & Foto Pendukung:</strong> Pekerja bisa mengunggah foto hasil kerja sebagai bukti aktivitas.</li>
+        </ul>
+
+        <h4>3. Pilihan Akses dan Interface</h4>
+        <ul>
+            <li><strong>Akses Mobile & Web:</strong> Akses melalui aplikasi mobile untuk pekerja, dan web-based interface untuk keperluan administratif.</li>
+            <li><strong>Brand Identity Telkom:</strong> Interface dikustomisasi sesuai brand Telkom untuk tampilan yang lebih personal.</li>
+            <li><strong>Aplikasi Berbasis Mobile:</strong> Preferensi aplikasi absensi dan dokumentasi dapat diakses dari perangkat mobile pekerja masing-masing.</li>
+        </ul>
+
+        <h4>4. Kebutuhan Penggajian dan KPI</h4>
+        <ul>
+            <li><strong>Modul Payroll:</strong> Slip gaji dan perhitungan gaji tenaga outsourcing akan dikelola di sistem, termasuk jam kerja dan lembur.</li>
+            <li><strong>Penambahan Modul KPI:</strong> Penilaian kinerja atau KPI tenaga outsourcing untuk posisi tertentu akan ditambahkan di dalam sistem.</li>
+            <li><strong>Struktur Gaji yang Fleksibel:</strong> Sistem perlu menyesuaikan dengan level gaji yang beragam sesuai struktur organisasi Telkom.</li>
+        </ul>
+
+        <h4>5. Teknologi dan Lisensi</h4>
+        <ul>
+            <li><strong>Opsi Lisensi Odoo:</strong> Telkom mempertimbangkan lisensi Odoo Enterprise untuk staf HR dan admin, serta Odoo Community untuk pekerja outsourcing.</li>
+            <li><strong>Hosting di AWS:</strong> Sistem akan di-host di AWS dengan spesifikasi yang disesuaikan.</li>
+            <li><strong>Mobile Apps Custom:</strong> Abajoo akan membuat ekstensi mobile agar pekerja login tanpa mengakses Odoo secara langsung.</li>
+        </ul>
+
+        <h3>Timeline & Next Action Items</h3>
+        <p><strong>Jadwal Implementasi:</strong> Target go-live adalah 1 Januari, dengan prioritas pada fitur absensi, dokumentasi aktivitas, dan dashboard pelaporan.</p>
+        <p><strong>Dokumen Pendukung:</strong> Tim Telkom akan memberikan contoh format laporan, form, dan detail struktur gaji.</p>
+        <p><strong>Persiapan Demo & Meeting:</strong> Rencana meeting offline di Telkom Landmark Tower, Lantai 3, Jakarta, untuk presentasi lengkap dan finalisasi requirement.</p>
+
+        <h3>Penutup</h3>
+        <p>Tim Abajoo akan mengirimkan list pertanyaan teknis dan detail kebutuhan tambahan ke Pak Joko sebagai tindak lanjut dari meeting ini.</p>
     </div>
 </div>
 
