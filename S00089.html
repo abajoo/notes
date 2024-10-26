@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Requirement - S00089</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        h1 {
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: #343a40;
+        }
+        .card {
+            border: none;
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #343a40;
+            color: white;
+            font-weight: 500;
+        }
+        .card-body {
+            background-color: white;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="logo">
+            <img src="https://abajoo.co.id/wp-content/uploads/2023/06/Abajoo.png" alt="Abajoo Logo">
+        </div>
+        <h1>List Requirement - S00089</h1>
+
+        <!-- Requirement 1 -->
+        <div class="card">
+            <div class="card-header">
+                Clock In/Out Berdasarkan Lokasi Customer
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li>Sales hanya bisa clock in dan clock out di lokasi customer yang sudah terdaftar.</li>
+                    <li>Radius lokasi clock in/out dapat dikonfigurasi (contoh: 50-100 meter).</li>
+                    <li>Pengajuan perubahan lokasi membutuhkan approval dari supervisor.</li>
+                    <li>Notifikasi otomatis untuk approval lokasi pertemuan baru.</li>
+                    <li>Pengingat agar laporan kunjungan segera diisi setelah clock out.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Requirement 2 -->
+        <div class="card">
+            <div class="card-header">
+                Penitikan Gerobak di Lapangan (Survey)
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li>Form survey harus bisa dikonfigurasi dengan jenis pertanyaan yang fleksibel.</li>
+                    <li>Jenis pertanyaan meliputi teks singkat, pilihan ganda, angka, atau tanggal.</li>
+                    <li>Pengambilan koordinat GPS untuk setiap titik gerobak yang diinput.</li>
+                    <li>Validasi radius lokasi gerobak agar masuk dalam area tertentu.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
