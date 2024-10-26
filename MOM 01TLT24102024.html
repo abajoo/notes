@@ -19,6 +19,7 @@
         }
         .container {
             margin-top: 50px;
+            display: none; /* Default: hide the content until password is correct */
         }
         .logo img {
             max-width: 150px;
@@ -44,8 +45,20 @@
             margin-left: 20px;
         }
     </style>
+
+    <script>
+        function checkPassword() {
+            const password = prompt("Please enter the password to access this page:");
+            if (password === "xyzabajoo123") {
+                document.querySelector(".container").style.display = "block";
+            } else {
+                alert("Password salah. Silakan coba lagi.");
+                checkPassword();
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="checkPassword()">
 
 <div class="container text-center">
     <div class="logo">
@@ -57,6 +70,13 @@
     <div class="content text-left mt-4">
         <h2>Minutes of Meeting</h2>
         <p><strong>Tanggal:</strong> 24 Oktober 2024</p>
+        <p><strong>Tempat:</strong> Telkom Landmark Tower, Jakarta</p>
+        
+        <h3>Peserta</h3>
+        <ul>
+            <li><strong>Perwakilan Telkom:</strong> Pak Joko, Pak Mada, Bu Ica, Pak Rizki</li>
+            <li><strong>Tim Abajoo:</strong> Pak Sabto (opsales), Pak Aris, Pak Ajis</li>
+        </ul>
         
         <h3>Agenda</h3>
         <ul>
